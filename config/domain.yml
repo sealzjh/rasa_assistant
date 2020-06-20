@@ -1,0 +1,37 @@
+intents:
+  - greet
+  - mood_faq_1
+  - mood_faq_2
+
+slots:
+  service:
+    type: text
+  name:
+    type: text
+  bus_time_text:
+    type: text
+
+entities:
+  - service
+
+actions:
+  - utter_greet
+  - utter_default
+  - action_bus_time
+  - utter_faq_1
+  - utter_faq_2
+
+templates:
+  utter_greet:
+  - text: "你好, 我是办公助理小二, 请问有什么需要帮助?"
+
+  utter_default:
+  - text: "很抱歉, 小二法理解你说的"
+
+  utter_faq_1:
+  - text: "亲 餐巾纸每月领取一次哦, 可到前台小姐姐处扫码领取"
+
+  utter_faq_2:
+  - text: "{bus_time_text}, 班车时刻表如下:"
+    image: "https://image3.imdada.cn/fb2ca60a291b426fa10562bc7e31567a.jpg"
+

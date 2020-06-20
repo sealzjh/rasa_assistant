@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>办公助理</title>
+    <meta charset="utf-8">
+</head>
+<div id="webchat"/>
+<script src="webchat.js"></script>
+<script>
+    WebChat.default.init({
+        selector: "#webchat",
+        initPayload: "Hello",
+        interval: 1000,
+        customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+        socketUrl: "http://127.0.0.1:5005",
+        socketPath: "/socket.io/",
+        title: "",
+        subtitle: "办公助理",
+        profileAvatar: "robotic.png",
+        showCloseButton: true,
+        fullScreenMode: false
+    })
+
+    var btn = document.getElementsByClassName("launcher");
+    btn[0].click()
+</script>
+</html>

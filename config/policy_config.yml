@@ -1,0 +1,11 @@
+policies:
+  - name: "KerasPolicy"
+    epochs: 6
+    max_history: 5
+  - name: "FallbackPolicy"
+    fallback_action_name: 'action_default_fallback'
+    nlu_threshold: 0.6
+    core_threshold: 0.6
+  - name: "MemoizationPolicy"
+    max_history: 5
+  - name: "FormPolicy"

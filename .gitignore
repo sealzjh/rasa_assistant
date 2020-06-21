@@ -1,0 +1,7 @@
+*.pkl
+*.csv
+*.bin
+*.pyc
+
+.idea
+models/*

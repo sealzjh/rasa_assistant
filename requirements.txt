@@ -7,7 +7,7 @@ backports.functools-lru-cache==1.5
 backports.weakref==1.0.post1
 boto3==1.9.77
 botocore==1.12.77
-certifi==2018.11.29
+certifi==2022.12.7
 chardet==3.0.4
 Click==7.0
 cloudpickle==0.6.1
